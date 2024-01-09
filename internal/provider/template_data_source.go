@@ -17,7 +17,6 @@ import (
 
 // Ensure provider defined types fully satisfy framework interfaces.
 var (
-	// _ datasource.DataSource              = &TemplateDataSource{}
 	_ datasource.DataSourceWithConfigure = &TemplateDataSource{}
 )
 

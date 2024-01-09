@@ -95,7 +95,7 @@ func (c *Client) GetTemplates() (*[]Template, error) {
 	return &templates.Data, nil
 }
 
-// GetTemplate returns a template by ID
+// GetTemplate returns a template by ID.
 func (c *Client) GetTemplate(id int) (*Template, error) {
 	url := fmt.Sprintf("%s/api/templates/%d", c.Host, id)
 	responseBody, err := c.sendRequest("GET", url, nil)
