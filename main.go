@@ -39,7 +39,7 @@ func main() {
 
 	opts := providerserver.ServeOpts{
 		// TODO: Update this string with the published name of your provider.
-		Address: "github.con/Muravlev/listmonk",
+		Address: "registry.terraform.io/Muravlev/listmonk",
 		Debug:   debug,
 	}
 

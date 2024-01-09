@@ -1,23 +1,20 @@
 package provider
 
 import (
+	"fmt"
+
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
 	"github.com/hashicorp/terraform-plugin-go/tfprotov6"
 )
 
-const (
-	providerConfig = `
-		terraform {
-			required_providers {
-				listmonk = {
-					source = "github.com/Muravlev/listmonk"
-				}
-			}
-		}
+var (
+	providerConfig = fmt.Sprintf(`
 		provider "listmonk" {
-			host = "http://localhost:9000"
+			host = "http://localhost:%s"
+			username = "listmonk"
+			password = "listmonk"
 		}
-`
+`, dockerClient.ContainerPort)
 )
 
 var (
