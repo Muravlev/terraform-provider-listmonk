@@ -1,6 +1,6 @@
 module terraform-provider-listmonk
 
-go 1.20
+go 1.21
 
 require (
 	github.com/hashicorp/terraform-plugin-docs v0.19.4
@@ -9,7 +9,7 @@ require (
 	github.com/hashicorp/terraform-plugin-log v0.9.0
 	github.com/hashicorp/terraform-plugin-testing v1.10.0
 	github.com/ory/dockertest/v3 v3.10.0
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.11.1
 )
 
 require (
